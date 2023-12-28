@@ -1,8 +1,6 @@
 name: Terraform CI/CD Pipeline for destroying AWS resources
 on:
-  push:
-    branches:
-      - 'main'
+  workflow_dispatch:
 
 env:
   AWS_ACCESS_KEY: ${{ secrets.AWS_ACCESS_KEY }}
